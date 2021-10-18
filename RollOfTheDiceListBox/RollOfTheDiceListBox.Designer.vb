@@ -23,6 +23,9 @@ Partial Class RollOfTheDiceListBox
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DiceRollsListBox = New System.Windows.Forms.ListBox()
+        Me.RollButton = New System.Windows.Forms.Button()
+        Me.ClearButton = New System.Windows.Forms.Button()
+        Me.ExitButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DiceRollsListBox
@@ -34,11 +37,41 @@ Partial Class RollOfTheDiceListBox
         Me.DiceRollsListBox.Size = New System.Drawing.Size(766, 229)
         Me.DiceRollsListBox.TabIndex = 0
         '
+        'RollButton
+        '
+        Me.RollButton.Location = New System.Drawing.Point(49, 343)
+        Me.RollButton.Name = "RollButton"
+        Me.RollButton.Size = New System.Drawing.Size(184, 97)
+        Me.RollButton.TabIndex = 1
+        Me.RollButton.Text = "Roll"
+        Me.RollButton.UseVisualStyleBackColor = True
+        '
+        'ClearButton
+        '
+        Me.ClearButton.Location = New System.Drawing.Point(341, 343)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(184, 97)
+        Me.ClearButton.TabIndex = 2
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
+        '
+        'ExitButton
+        '
+        Me.ExitButton.Location = New System.Drawing.Point(631, 343)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(184, 97)
+        Me.ExitButton.TabIndex = 3
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
         'RollOfTheDiceListBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(869, 507)
+        Me.Controls.Add(Me.ExitButton)
+        Me.Controls.Add(Me.ClearButton)
+        Me.Controls.Add(Me.RollButton)
         Me.Controls.Add(Me.DiceRollsListBox)
         Me.Name = "RollOfTheDiceListBox"
         Me.Text = "Roll of the Dice"
@@ -47,4 +80,7 @@ Partial Class RollOfTheDiceListBox
     End Sub
 
     Friend WithEvents DiceRollsListBox As ListBox
+    Friend WithEvents RollButton As Button
+    Friend WithEvents ClearButton As Button
+    Friend WithEvents ExitButton As Button
 End Class
