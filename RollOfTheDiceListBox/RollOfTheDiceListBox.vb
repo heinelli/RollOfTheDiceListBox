@@ -7,8 +7,7 @@ Option Strict On
 Option Explicit On
 Public Class RollOfTheDiceListBox
     Private Sub RollOfTheDiceListBox_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DiceRollsListBox.Items.Add("Line 1")
-        DiceRollsListBox.Items.Add("Line 2")
+
     End Sub
 
     Function RandomNumber() As Integer
@@ -38,7 +37,7 @@ Public Class RollOfTheDiceListBox
         'Create a header with the proper amount of columns
         Dim rowData As String
         For i = 0 To 10
-            rowData &= CStr(i + 2)
+            rowData &= CStr(i + 2).PadLeft(10)
         Next
         DiceRollsListBox.Items.Add(rowData)
 
