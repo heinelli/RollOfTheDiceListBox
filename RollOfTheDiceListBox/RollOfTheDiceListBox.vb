@@ -27,30 +27,30 @@ Public Class RollOfTheDiceListBox
 
     Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click
         Dim diceNumbers(10) As Integer
+        Dim rowData As String
+        Dim diceRollData As String
 
         'Total the number of times that each combination is rolled.
         For i = 0 To 1000
             diceNumbers(RandomNumber()) += 1
         Next
 
-
-
-        'Create a header with the proper amount of columns
-        Dim rowData As String
+        'Create a header with the proper amount of columns.
         For i = 0 To 10
             rowData &= CStr(i + 2).PadLeft(5) & "|"
         Next
         DiceRollsListBox.Items.Add(rowData)
         DiceRollsListBox.Items.Add(StrDup(66, "-"))
 
-        Dim diceData As String
+        'Concatenate the total of each dice roll into one formatted line.
         For i = 0 To 10
-            diceData &= CStr(diceNumbers(i)).PadLeft(5) & "|"
+            diceRollData &= CStr(diceNumbers(i)).PadLeft(5) & "|"
         Next
-        DiceRollsListBox.Items.Add(diceData)
+        DiceRollsListBox.Items.Add(diceRollData)
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
-
+        'Clear all listbox data.
+        DiceRollsListBox.Items.Clear()
     End Sub
 End Class
