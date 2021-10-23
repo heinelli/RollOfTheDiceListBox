@@ -30,11 +30,12 @@ Partial Class RollOfTheDiceListBox
         '
         'DiceRollsListBox
         '
+        Me.DiceRollsListBox.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DiceRollsListBox.FormattingEnabled = True
-        Me.DiceRollsListBox.ItemHeight = 25
+        Me.DiceRollsListBox.ItemHeight = 28
         Me.DiceRollsListBox.Location = New System.Drawing.Point(49, 44)
         Me.DiceRollsListBox.Name = "DiceRollsListBox"
-        Me.DiceRollsListBox.Size = New System.Drawing.Size(766, 229)
+        Me.DiceRollsListBox.Size = New System.Drawing.Size(1027, 228)
         Me.DiceRollsListBox.TabIndex = 0
         '
         'RollButton
@@ -48,7 +49,7 @@ Partial Class RollOfTheDiceListBox
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(341, 343)
+        Me.ClearButton.Location = New System.Drawing.Point(476, 343)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(184, 97)
         Me.ClearButton.TabIndex = 2
@@ -57,7 +58,7 @@ Partial Class RollOfTheDiceListBox
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(631, 343)
+        Me.ExitButton.Location = New System.Drawing.Point(892, 343)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(184, 97)
         Me.ExitButton.TabIndex = 3
@@ -68,7 +69,7 @@ Partial Class RollOfTheDiceListBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(869, 507)
+        Me.ClientSize = New System.Drawing.Size(1131, 651)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.RollButton)
