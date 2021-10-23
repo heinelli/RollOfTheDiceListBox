@@ -31,6 +31,7 @@ Public Class RollOfTheDiceListBox
         Next
         DiceRollsListBox.Items.Add(dataRow)
         DiceRollsListBox.Items.Add(StrDup(66, "-"))
+        RollButton.Enabled = False
     End Sub
 
     Function RandomNumber() As Integer
@@ -52,5 +53,6 @@ Public Class RollOfTheDiceListBox
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
         'Clear all listbox data.
         DiceRollsListBox.Items.Clear()
+        RollButton.Enabled = True
     End Sub
 End Class
