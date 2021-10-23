@@ -5,7 +5,7 @@
 
 Option Strict On
 Option Explicit On
-Public Class RollOfTheDiceListBox
+Public Class RollOfTheDiceListBoxForm
     Private Sub RollButton_Click(sender As Object, e As EventArgs) Handles RollButton.Click
         Dim diceNumbers(10) As Integer
         Dim headerRow As String
